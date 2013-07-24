@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "AppHarbor on the go - Harbor";
+}
+
+<div class="row" style="margin-top:30px">
+    <div class="span6">
+        <div class="page-header">
+            <h1>Harbor <small>AppHarbor on the go</small></h1>
+        </div>
+        <div style="height:475px">
+            <h3>Got AppHarbor and an iPhone?</h3>
+            
+            <p>Harbor uses the <a href="http://support.appharbor.com/kb/api" target="_blank">AppHarbor API</a>, allowing you to view all of your
+               hosted applications and information you need like:</p>
+
+            <ul style="margin-left:50px; color:White">
+                <li>Uploaded Builds</li>
+                <li>Project Collaborators</li>
+                <li>Configuration Variables</li>
+                <li>Application Errors</li>
+                <li>Custom Hostnames</li>
+                <li>Third-party Service Hooks</li>
+                <li>Build Tests</li>
+            </ul>
+
+            <p>All you need to do to get going with Harbor is authorize it with AppHarbor and you're good to go!</p>
+
+            <h3 style=" margin-top:20px">This is just the start.</h3>
+
+            <p>We're planning on making your mobile AppHarbor experience even better with Push Notifications, 
+               clients for Android and Windows Phone, and a deeper integration with what AppHarbor has to offer
+               you as a developer.</p>
+
+            <p>All updates in the future are free so take the plunge, buy the app and take AppHarbor on the go!</p>
+        </div>
+        
+        <div class="btn-group">
+            <a href="http://itunes.apple.com/us/app/harbor/id545262560?ls=1&mt=8" class="btn btn-inverse btn-large">
+                <i class="icon-star icon-white"></i> Get it now on the App Store
+            </a>
+            <a class="btn btn-inverse btn-large" href="javascript:UserVoice.showPopupWidget();" title="Feedback & Support (UserVoice)">
+                <i style="margin-top:2px" class="icon-bullhorn icon-white"></i>&nbsp;&nbsp;&nbsp;Feedback &amp; Support
+            </a>
+        </div>
+    </div>
+    <div class="span5 offset1">
+        @Html.Partial("Gallery");
+    </div>
+    @*<div class="span3">
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+            new TWTR.Widget({
+                version: 2,
+                type: 'profile',
+                rpp: 5,
+                interval: 30000,
+                width: 'auto',
+                height: 500,
+                theme: {
+                    shell: {
+                        background: '#333333',
+                        color: '#ffffff'
+                    },
+                    tweets: {
+                        background: '#000000',
+                        color: '#ffffff',
+                        links: '#4aed05'
+                    }
+                },
+                features: {
+                    scrollbar: true,
+                    loop: false,
+                    live: true,
+                    behavior: 'all'
+                }
+            }).render().setUser('HarborApp').start();
+        </script>
+    </div>*@
+</div>
+<script src="/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $('.carousel').carousel({ interval: 5000 });
+</script>
+<script type="text/javascript">
+    var uvOptions = {};
+    (function () {
+        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/XZIYIsChnDGoFtZsi84LnQ.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+    })();
+</script>

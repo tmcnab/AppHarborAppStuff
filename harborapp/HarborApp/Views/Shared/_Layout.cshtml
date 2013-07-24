@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="/Content/images/favicon.ico" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            background-color: Black;
+            font-size:14px;
+        }
+        
+        h1, p {
+            color: #EEE;
+        }
+        
+        h3 {
+            margin-bottom:10px;
+            color:#777;
+        }
+        
+        .popover-content > p {
+            color: Black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer class="navbar-fixed-bottom" style="text-align:center; font-size:11px">
+        <small>Harbor &copy; Seditious Technologies 2011-@DateTime.Now.Year - Seditious Technologies is not affiliated in any way with AppHarbor</small>
+    </footer>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-33452414-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>
